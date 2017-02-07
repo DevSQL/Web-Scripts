@@ -1,15 +1,13 @@
 --http://www.johnsansom.com/how-to-identify-the-most-costly-sql-server-queries-using-dmvs/
 
 /*
-There’s nothing new or magic here, the code snippet simply identifies 
+Thereâ€™s nothing new or magic here, the code snippet simply identifies 
 the top 20 most expensive queries (currently cached) based on the 
 cumulative CPU cost.
 
 The query returns both the SQL Text from the sys.dm_exec_sql_text DMV 
 and the XML Showplan data from the sys.dm_exec_query_plan DMV.
 */
-
-
 
 SELECT TOP 20
     qs.sql_handle,
