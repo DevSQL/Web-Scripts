@@ -1,7 +1,6 @@
 --http://www.mssqltips.com/sqlservertip/2393/determine-sql-server-memory-use-by-database-and-object/
 
 /*
-
 A Dynamic Management View (DMV) introduced in SQL Server 2005, 
 called sys.dm_os_buffer_descriptors, contains a row for every 
 page that has been cached in the buffer pool. Using this DMV, 
@@ -12,7 +11,6 @@ can drill into them individually. In the following query, I first
 find out exactly how big the buffer pool currently is (from the 
 DMV sys.dm_os_performance_counters), allowing me to calculate the 
 percentage of the buffer pool being used by each database: 
-
 */
 
 DECLARE @total_buffer INT;
