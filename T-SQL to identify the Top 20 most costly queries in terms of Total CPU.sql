@@ -27,3 +27,5 @@ from
     CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) as st
     cross apply sys.dm_exec_query_plan (qs.plan_handle) as qp
 ORDER BY qs.total_worker_time desc
+
+--comentariows aqui
